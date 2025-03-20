@@ -1,32 +1,61 @@
-# Automação de Baixa de Pagamentos
+# Payment Processing Automation
 
-Este projeto é uma automação de processos financeiros utilizando Python, projetada para facilitar a baixa de pagamentos em um sistema específico.
+This project is a financial process automation using Python, designed to facilitate payment processing in a specific system.
 
-## Atualizações Recentes
+## Recent Updates
 
-### [Data de Hoje]
+### [Today's Date]
 
-- **Função `check_for_stop`:** Adicionada para verificar se a tecla 'q' foi pressionada, permitindo a interrupção do script a qualquer momento.
-- **Ajuste no `lancar_baixa`:** Incluído o uso da tecla "delete" para garantir que o campo de entrada esteja limpo antes de inserir novos dados.
-- **Pop-up de Interrupção:** Implementado um pop-up que informa ao usuário quando nenhum pagamento correspondente é encontrado, melhorando a interação do usuário com o sistema.
+- **Function `check_for_stop`:** Added to check if the 'q' key was pressed, allowing the script to be interrupted at any time.
+- **Adjustment in `lancar_baixa`:** Included the use of the "delete" key to ensure the input field is cleared before entering new data.
+- **Interruption Pop-up:** Implemented a pop-up that informs the user when no corresponding payment is found, improving user interaction with the system.
 
-## Funcionalidades Principais
+## Main Features
 
-- **Navegação Automatizada:** Utiliza a biblioteca `pyautogui` para simular cliques e entradas de teclado, navegando automaticamente pelo sistema financeiro.
-- **Captura de Valores:** Captura valores de parcelas diretamente da interface do sistema e os processa para verificação.
-- **Extração de Dados de PDF:** Utiliza `pdfplumber` para extrair valores de extratos bancários em PDF, facilitando a comparação com os valores das parcelas.
-- **Verificação de Pagamentos:** Compara os valores capturados com os valores extraídos dos extratos para verificar se os pagamentos foram realizados.
-- **Lançamento de Baixa:** Se um pagamento correspondente for encontrado, a automação lança a baixa do pagamento no sistema.
-- **Ativação de Janela:** Utiliza `pygetwindow` para ativar a janela do aplicativo necessário antes de iniciar a automação.
+- **Automated Navigation:** Uses the `pyautogui` library to simulate clicks and keyboard inputs, automatically navigating through the financial system.
+- **Value Capture:** Captures installment values directly from the system interface and processes them for verification.
+- **PDF Data Extraction:** Uses `pdfplumber` to extract values from bank statements in PDF, facilitating comparison with installment values.
+- **Payment Verification:** Compares captured values with extracted values from statements to verify if payments have been made.
+- **Payment Processing:** If a corresponding payment is found, the automation processes the payment in the system.
+- **Window Activation:** Uses `pygetwindow` to activate the necessary application window before starting the automation.
 
-## Tecnologias Utilizadas
+## Technologies Used
 
-- **Python:** Linguagem de programação principal para a automação.
-- **PyAutoGUI:** Para automação de GUI.
-- **PyGetWindow:** Para manipulação de janelas de aplicativos.
-- **PDFPlumber:** Para extração de texto de PDFs.
-- **Pytesseract:** Para OCR, se necessário.
-- **Pandas:** Para manipulação de dados, se necessário.
-- **Pyperclip:** Para manipulação da área de transferência.
+- **Python:** Main programming language for automation.
+- **PyAutoGUI:** For GUI automation.
+- **PyGetWindow:** For application window manipulation.
+- **PDFPlumber:** For text extraction from PDFs.
+- **Pytesseract:** For OCR, if necessary.
+- **Pandas:** For data manipulation, if necessary.
+- **Pyperclip:** For clipboard manipulation.
 
-Este projeto é ideal para empresas que precisam automatizar a baixa de pagamentos de forma eficiente, reduzindo erros manuais e economizando tempo.
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/your-repository.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd your-repository
+   ```
+3. Install the dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+## Usage
+
+1. Run the main script:
+   ```bash
+   python main.py
+   ```
+2. Follow the on-screen instructions to start the automation.
+
+## Contribution
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
